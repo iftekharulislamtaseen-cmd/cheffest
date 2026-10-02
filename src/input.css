@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --spacing: 1px;
+  --breakpoint-*: initial;
+  --breakpoint-sm: 175px;
+  --breakpoint-md: 480px;
+  --breakpoint-lg: 768px;
+  --breakpoint-2lg: 901px;
+  --breakpoint-xl: 992px;
+  --breakpoint-2xl: 1280px;
+  --font-inter: "Inter", sans-serif;
+  --radius-br12: 12px;
+  --radius-br8: 8px; 
+  --radius-br30: 30px;
+  --radius-br40: 40px; 
+}
+
+@utility container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@utility btn{
+    @apply bg-white py-20 px-50 rounded-full text-black sm:w-full lg:py-16 hover:cursor-[url(/dragon-fite.svg),auto]
+}

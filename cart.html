@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-300 py-20 px-15 sm:px-15 lg:px-0 lg:py-40">
+    <div class="container lg:px-20">
+      
+      <div class="flex flex-col gap-20">
+        <div class="flex items-center 2xl:gap-530 sm:gap-20 lg:gap-20 pb-20 lg:pb-30">
+          <a href="index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+          <h3 class="font-bold text-black text-[18px] lg:text-[21px]">My Cart</h3>
+        </div>
+        <div>
+          <div
+            id="maincart"
+            class="flex items-center justify-between bg-[#0D0D0D] py-10 px-10 text-[14px] md:text-[16px] lg:text-[18px] font-bold text-white"
+          >
+            <h3>product</h3>
+            <h3>quantity</h3>
+            <h3>subtotal</h3>
+          </div>
+          <div class="" id="carditem"></div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between gap-30 lg:gap-0">
+          <div
+            id="couponcontainer"
+            class="bg-white p-10 w-full max-w-370 h-45 rounded-md transition-all duration-100 ease-linear"
+          >
+            <div class="flex items-center justify-between pb-15">
+              <h3>Apply Coupon</h3>
+              <div>
+                <i id="arrow" class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+            <div
+              id="inputcontainer"
+              class="hidden transition-all duration-600 ease-linear"
+            >
+              <div>
+                <div class="flex items-center gap-10 md:gap-20">
+                  <div class="border border-gray-400 py-5 px-10 md:px-20 rounded-md flex-1">
+                    <input
+                      class="w-full outline-0 border-0 placeholder:text-black text-[13px] md:text-[14px] mb-4"
+                      type="text"
+                      name=""
+                      id="input"
+                      placeholder="Enter Your Coupon Code"
+                    />
+                  </div>
+                  <button
+                    class="border-0 bg-blue-500 pt-3 pb-8 px-15 md:px-20 flex justify-center items-center rounded-md text-white whitespace-nowrap"
+                    id="submit"
+                  >
+                    Apply
+                  </button>
+                </div>
+                <div class="text-[12px] text-blue-500 h-10" id="message"></div>
+              </div>
+            </div>
+          </div>
+          <div id="subtotal" class="flex justify-start lg:justify-end w-full lg:w-auto sm:justify-end"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="cart.js"></script>
+  </body>
+</html>
